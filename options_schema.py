@@ -1,0 +1,63 @@
+import sys
+import json
+
+schema = {'emitting': ['classifier/antagonise',
+                       'classifier/condescending',
+                       'classifier/condescending',
+                       'classifier/dismissive',
+                       'classifier/generalisation',
+                       'classifier/generalisation_unfair',
+                       'classifier/unhealthy',
+                       'classifier/hostile',
+                       'classifier/sarcastic',
+                       ],
+          'key_roles': {
+                'optional_incoming': [
+                ],
+                'required_incoming': [
+                       {'name': 'comment',
+                        'description': 'the post text',
+                        'defaults': ['D/Text'],
+                        'type': 'String'},
+                ]
+          },
+          'keys': [
+              {'description': '',
+               'name': 'Text',
+               'namespace': 'D',
+               'type': 'String'},
+              {'description': '',
+               'name': 'antagonise',
+               'namespace': 'classifier',
+               'type': 'Boolean'},
+              {'description': '',
+               'name': 'condescending',
+               'namespace': 'classifier',
+               'type': 'Boolean'},
+              {'description': '',
+               'name': 'dismissive',
+               'namespace': 'classifier',
+               'type': 'Boolean'},
+              {'description': '',
+               'name': 'generalisation',
+               'namespace': 'classifier',
+               'type': 'Boolean'},
+              {'description': '',
+               'name': 'generalisation_unfair',
+               'namespace': 'classifier',
+               'type': 'Boolean'},
+              {'description': '',
+               'name': 'unhealthy',
+               'namespace': 'classifier',
+               'type': 'Boolean'},
+              {'description': '',
+               'name': 'hostile',
+               'namespace': 'classifier',
+               'type': 'Boolean'},
+              {'description': '',
+               'name': 'sarcastic',
+               'namespace': 'classifier',
+               'type': 'Boolean'},
+          ]
+          }
+json.dump(schema, sys.stdout, indent=4)
