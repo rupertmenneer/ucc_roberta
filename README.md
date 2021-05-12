@@ -1,6 +1,6 @@
 # ucc_roberta
 
-The unhealthy comment corpus contains ~45,000 labeled comments. The labels consist of subtle sentiment attributes such as 'sarcasm'. The primary attribute is 'unhealthy'. This repo presents a RoBERTa model fine-tuned on the UCC task. It presents state-of-the-art results on this task.
+The unhealthy comment corpus contains ~45,000 labeled comments. The labels consist of subtle sentiment attributes such as 'sarcasm'. The primary attribute is 'unhealthy'. This repo presents a RoBERTa model fine-tuned on the UCC task. It presents state-of-the-art results on this task with an average AUC ROC of ~0.84 compared to the AUC ROC of ~74 for the baseline model.
 
 This repo presents the model in a form ready to make predictions on unseen data and is set up as a stand-alone service with JSON input and output. Unfortunately, the checkpoint file for this model is too large to be uploaded directly into repo, this will be required for correct predictions.
 
