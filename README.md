@@ -13,6 +13,12 @@ The UCC RoBERTa model was trained on Google Colab using a GPU. It was set up wit
 
 The produced UCC RoBERTa model was evaluated and the improvement over the baseline model underwent McNemar statisical test. The improvement was found to be significant with a P-value of <0.0001.
 
+## system requirements
 
+the system will need all libraries versioned correctly as per either the requirements.txt file or the pip.lock file. Both have been provided for convenience.
+
+## running as a service
+
+this system is set up to run as a stand-alone service. Best practice is to run the main.py file from the command line via Gunicorn. It can also be run directly from the main.py file in an IDE for testing purposes.
 
 
