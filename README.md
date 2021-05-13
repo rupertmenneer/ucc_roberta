@@ -7,7 +7,7 @@ This repo presents the model in a form ready to make predictions on unseen data 
 
 ## model training
 
-The UCC RoBERTa model was trained on Google Colab using a GPU. The model is set up with Pytorch Lightning amd it uses the Hugging Face library to acquire RoBERTa. Hyper-parameter optimisation is achieved with the Ray Tune Library and the ASHA algorithm. Find this training process under model_training/
+The UCC RoBERTa model was trained on Google Colab using a GPU. It was set up with Pytorch Lightning! ⚡️ it uses the Hugging Face library 🤗 to acquire RoBERTa. Hyper-parameter optimisation is achieved with the Ray Tune Library and the ASHA algorithm. Find this training process under model_training/
 
 ## statisical significance
 
